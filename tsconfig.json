@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "removeComments": false,
+        "module": "commonjs",
+        "target": "ES6",
+        "moduleResolution": "node",
+        "strict": true,
+        "pretty": true,
+        "outDir": "lib",
+        "rootDir": "src",
+        "declaration": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "newLine": "lf"
+    },
+    "include": [
+        "src"
+    ]
+}
