@@ -7,10 +7,17 @@
   "author": "Angelo II",
   "license": "Apache 2.0",
   "scripts": {
-    "format": "prettier --write lib",
-    "format:dev": "prettier --write src"
+    "format": "prettier --write src",
+    "build:babel": "npx babel --extensions .ts ./src -d ./lib --minified",
+    "build:types": "tsc --emitDeclarationOnly"
   },
   "devDependencies": {
+    "@babel/cli": "^7.16.7",
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^1.0.4",
     "prettier": "^2.5.1",
     "typescript": "^4.5.4"
   },
