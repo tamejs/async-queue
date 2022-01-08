@@ -2,7 +2,7 @@
     "compilerOptions": {
         "removeComments": false,
         "module": "commonjs",
-        "target": "ES2021",
+        "target": "ES2019",
         "moduleResolution": "node",
         "strict": true,
         "pretty": true,
