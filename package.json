@@ -1,6 +1,6 @@
 {
   "name": "@tamejs/async-queue",
-  "version": "1.5.0",
+  "version": "1.5.0-babel",
   "description": "A queue for a set of promises",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
