@@ -1,9 +1,11 @@
-test.ts
+babel.config.js
 nodemon.json
-src
 .vscode
 tsconfig.json
-examples
+examples/
+__tests__/
+scripts/
+src/
 .prettierignore
 .prettierrc.json
 .eslintrc.json

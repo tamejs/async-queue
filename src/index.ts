@@ -57,6 +57,7 @@ export class AsyncQueue {
    */
   public next(): boolean {
     let toDef = this.promises.shift();
+
     if (toDef) {
       toDef.resolve();
       return true;
