@@ -4,7 +4,7 @@ nodemon.json
 .vscode
 tsconfig.json
 examples/
-test/
+__tests__/
 scripts/
 src/
 .prettierignore
