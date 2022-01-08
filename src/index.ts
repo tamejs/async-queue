@@ -7,7 +7,7 @@ export class AsyncQueue {
 	private promises: AsyncPromise[] = [];
 
 	/** The length of promises remaining in the queue */
-	public get left(): number {
+	public get left(): Array<AsyncPromise["promise"]>["length"] {
 		return this.promises.length;
 	}
 
@@ -36,11 +36,11 @@ export class AsyncQueue {
 	 * ```
 	 * @returns {Promise}
 	 */
-	public new(): Promise<void> {
+	public new(): AsyncPromise["promise"] {
 		const length = this.promises.length;
 		const next = length ? this.promises[length - 1].promise : Promise.resolve();
 
-		let resolve: () => void;
+		let resolve: (AsyncPromise["resolve"] | undefined);
 		const promise = new Promise<void>((res) => (resolve = res));
 
 		this.promises.push({
