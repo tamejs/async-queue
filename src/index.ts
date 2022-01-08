@@ -55,7 +55,7 @@ export class AsyncQueue {
 	 * Resolving the next promise
 	 * @returns {boolean} If there is a next promise, it will return `true`, if there is no, `false`
 	 */
-	public next(): Boolean {
+	public next(): boolean {
 		const toDef = this.promises.shift();
 		if (toDef) {
 			toDef.resolve();
