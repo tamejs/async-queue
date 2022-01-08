@@ -1,4 +1,5 @@
 node_modules
 *.json
-test.ts
+*.js
+__tests__
 lib

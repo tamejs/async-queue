@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write src",
-    "build:babel": "babel --extensions .ts ./src -d ./lib --minified",
+    "build": "npm run build:babel && npm run build:types",
+    "build:babel": "babel --extensions .ts ./src -d ./lib --minified --no-comments",
     "build:types": "tsc --emitDeclarationOnly"
   },
   "devDependencies": {
