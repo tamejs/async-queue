@@ -1,0 +1,11 @@
+test.ts
+nodemon.json
+src
+.vscode
+tsconfig.json
+examples
+.prettierignore
+.prettierrc.json
+.eslintrc.json
+.eslintignore
+.gitignore

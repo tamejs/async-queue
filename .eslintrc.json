@@ -1,0 +1,116 @@
+{
+    "root": true,
+    "env": {
+        "browser": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:eqeqeq-fix/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "project": "./tsconfig.json"
+    },
+    "rules": {
+        "semi": [
+            "error",
+            "always",
+            {
+                "omitLastInOneLineBlock": true
+            }
+        ],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 3,
+                "maxEOF": 1,
+                "maxBOF": 0
+            }
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "camelcase": [
+            "error",
+            {
+                "properties": "always"
+            }
+        ],
+        "curly": [
+            "error",
+            "multi-or-nest"
+        ],
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "prefer-const": "off",
+        "prefer-let/prefer-let": "error",
+        "no-multi-spaces": "error",
+        "quote-props": [
+            "error",
+            "as-needed"
+        ],
+        "prefer-destructuring": [
+            "error",
+            {
+                "array": false,
+                "object": false
+            }
+        ],
+        "prefer-template": "error",
+        "space-before-blocks": [
+            "error",
+            "always"
+        ],
+        "space-infix-ops": "error",
+        "func-call-spacing": [
+            "error",
+            "never"
+        ],
+        "key-spacing": [
+            "error",
+            {
+                "beforeColon": false
+            }
+        ],
+        "brace-style": "error",
+        "template-curly-spacing": "error",
+        "no-console": "warn",
+        "no-var": "error",
+        "@typescript-eslint/no-explicit-any": "error",
+        "@typescript-eslint/no-non-null-assertion": "off",
+        "no-eq-null": "error",
+        "no-lonely-if": "error",
+        "prettier/prettier": [
+            "error",
+            {
+                "tabWidth": 2,
+                "useTabs": false,
+                "endOfLine": "lf",
+                "semi": true,
+                "quoteProps": "as-needed",
+                "trailingComma": "none"
+            }
+        ],
+        "arrow-body-style": [
+            "error",
+            "as-needed"
+        ],
+        "prefer-arrow-callback": "error"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "prettier",
+        "prefer-let"
+    ]
+}
