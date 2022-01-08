@@ -8,7 +8,7 @@
   "license": "Apache 2.0",
   "scripts": {
     "lint": "eslint .",
-    "lint:fix": "eslint .",
+    "lint:fix": "eslint . --fix",
     "format": "prettier --write src",
     "build:babel": "babel --extensions .ts ./src -d ./lib --minified",
     "build:types": "tsc --emitDeclarationOnly"
