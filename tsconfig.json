@@ -11,7 +11,11 @@
         "declaration": true,
         "resolveJsonModule": true,
         "esModuleInterop": true,
-        "newLine": "lf"
+        "newLine": "lf",
+        "noUnusedParameters": true,
+        "noUnusedLocals": true,
+        "noImplicitAny": true,
+        "noFallthroughCasesInSwitch": true,
     },
     "include": [
         "src/index.ts"

@@ -7,7 +7,7 @@ export class AsyncQueue {
   private promises: AsyncPromise[] = [];
 
   /** The length of promises remaining in the queue */
-  public get left(): number {
+  public get left(): Array<AsyncPromise["promise"]>["length"] {
     return this.promises.length;
   }
 
@@ -36,16 +36,16 @@ export class AsyncQueue {
    * ```
    * @returns {Promise}
    */
-  public new(): Promise<void> {
-    const length = this.promises.length;
-    const next = length ? this.promises[length - 1].promise : Promise.resolve();
+  public new(): AsyncPromise["promise"] {
+    let length = this.promises.length;
+    let next = length ? this.promises[length - 1].promise : Promise.resolve();
 
-    let resolve: () => void;
-    const promise = new Promise<void>((res) => (resolve = res));
+    let resolve: AsyncPromise["resolve"] | undefined;
+    let promise = new Promise<void>((res) => (resolve = res));
 
     this.promises.push({
       resolve: resolve!,
-      promise,
+      promise
     });
 
     return next;
@@ -56,7 +56,8 @@ export class AsyncQueue {
    * @returns {boolean} If there is a next promise, it will return `true`, if there is no, `false`
    */
   public next(): boolean {
-    const toDef = this.promises.shift();
+    let toDef = this.promises.shift();
+
     if (toDef) {
       toDef.resolve();
       return true;
