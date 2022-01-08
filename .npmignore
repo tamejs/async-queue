@@ -1,0 +1,13 @@
+babel.config.js
+nodemon.json
+.vscode
+tsconfig.json
+examples/
+__tests__/
+scripts/
+src/
+.prettierignore
+.prettierrc.json
+.eslintrc.json
+.eslintignore
+.gitignore
