@@ -1,8 +1,10 @@
-<div style="text-align: center">
-  <img src="https://i.imgur.com/P2GGeTD.png" height="200" style="border-radius: 20px">
-  <br /><br />
-  <h1><a href="https://www.npmjs.com/package/tame">Tame</a> modules | asyncqueue</h1>
-</div>
+# Deprecated, use [@sapphire/async-queue](https://github.com/sapphiredev/utilities/tree/main/packages/async-queue) instead
+
+<br /><br />
+
+![image](https://i.imgur.com/P2GGeTD.png)
+
+# [Tame](https://www.npmjs.com/package/tame") modules | async-queue
 
 ## Description
 
@@ -10,8 +12,21 @@ With this package you can queue promises
 
 ## Installation
 
-It's very easy:
-`npm install @tamejs/async-queue`
+### It's very easy:
+
+<br />
+
+NPM
+
+```sh
+npm install @tamejs/async-queue
+```
+
+yarn
+
+```sh
+yarn add  @tamejs/async-queue
+```
 
 ## Example
 
@@ -22,10 +37,5 @@ It's very easy:
 Read [this](https://github.com/tamejs/tame/blob/main/.github/CONTRIBUTING.md)
 
 # License
-
-Thanks to [sapphire](https://www.npmjs.com/package/@sapphire/async-queue) community for the ideas!
-
-<hr>
-<br>
 
 MIT License | Copyright © `2020` `The Sapphire Community and its contributors`
