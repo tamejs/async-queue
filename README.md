@@ -28,4 +28,4 @@ Thanks to [sapphire](https://www.npmjs.com/package/@sapphire/async-queue) commun
 <hr>
 <br>
 
-Copyright (©) Tamejs 2022
+MIT License | Copyright © `2020` `The Sapphire Community and its contributors`
