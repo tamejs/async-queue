@@ -5,19 +5,24 @@
 </div>
 
 ## Description
+
 With this package you can queue promises
 
 ## Installation
+
 It's very easy:
 `npm install @tamejs/async-queue`
 
 ## Example
-![example](https://github.com/tamejs/async-queue/blob/main/examples/preview.png?raw=true)
+
+<img title="" src="https://github.com/tamejs/async-queue/blob/main/examples/preview.png?raw=true" alt="example" width="716" data-align="left">
 
 # Contributing
+
 Read [this](https://github.com/tamejs/tame/blob/main/.github/CONTRIBUTING.md)
 
 # License
+
 Thanks to [sapphire](https://www.npmjs.com/package/@sapphire/async-queue) community for the ideas!
 
 <hr>
