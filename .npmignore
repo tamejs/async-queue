@@ -1,4 +1,3 @@
-babel.config.js
 nodemon.json
 .vscode
 tsconfig.json
@@ -11,3 +10,5 @@ src/
 .eslintrc.json
 .eslintignore
 .gitignore
+.gitattributes
+.github

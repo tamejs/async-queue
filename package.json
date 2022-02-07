@@ -1,24 +1,18 @@
 {
   "name": "@tamejs/async-queue",
-  "version": "1.5.0-babel",
+  "version": "1.5.6",
   "description": "A queue for a set of promises",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": "Angelo II",
-  "license": "Apache 2.0",
+  "license": "MIT",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write src",
-    "build": "npm run build:babel && npm run build:types",
-    "build:babel": "babel --extensions .ts ./src -d ./lib --minified --no-comments",
-    "build:types": "tsc --emitDeclarationOnly"
+    "build": "tsc"
   },
   "devDependencies": {
-    "@babel/cli": "^7.16.7",
-    "@babel/core": "^7.16.7",
-    "@babel/preset-env": "^7.16.7",
-    "@babel/preset-typescript": "^7.16.7",
     "@typescript-eslint/eslint-plugin": "^5.6.0",
     "@typescript-eslint/parser": "^5.6.0",
     "eslint": "^8.6.0",
